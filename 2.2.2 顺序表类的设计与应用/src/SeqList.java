@@ -105,6 +105,23 @@ public class SeqList<T> extends Object
         }
         return -1;
         }
+    public boolean equals(Object obj)
+    {
+        if(this==obj)
+            return true;
+        if(obj instanceof SeqList<?>)
+        {
+            SeqList<T> list=(SeqList<T>) obj;
+            if(this.n==list.n)
+            {
+                for (int i = 0; i < this.n; i++)
+                    if(!(this.element[i].equals(list.element[i])))
+                        return true;
+            }
+        }
+        return false;
+    }
+
 
     }
 
