@@ -1,0 +1,85 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/2.2.2 顺序表类的设计与应用/2.2.2 顺序表类的设计与应用.iml\" filepath=\"$PROJECT_DIR$/2.2.2 顺序表类的设计与应用/2.2.2 顺序表类的设计与应用.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/Java数据结构与算法.iml\" filepath=\"$PROJECT_DIR$/Java数据结构与算法.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision a69037e064bd390f5f60bd1beb598c585d80d5c1)
++++ b/.idea/modules.xml	(date 1631451391783)
+@@ -3,6 +3,7 @@
+   <component name="ProjectModuleManager">
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/2.2.2 顺序表类的设计与应用/2.2.2 顺序表类的设计与应用.iml" filepath="$PROJECT_DIR$/2.2.2 顺序表类的设计与应用/2.2.2 顺序表类的设计与应用.iml" />
++      <module fileurl="file://$PROJECT_DIR$/2.3.2 单链表/2.3.2 单链表.iml" filepath="$PROJECT_DIR$/2.3.2 单链表/2.3.2 单链表.iml" />
+       <module fileurl="file://$PROJECT_DIR$/Java数据结构与算法.iml" filepath="$PROJECT_DIR$/Java数据结构与算法.iml" />
+     </modules>
+   </component>
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1630934524301)
++++ b/.idea/encodings.xml	(date 1630934524301)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/2.2.2 顺序表类的设计与应用/src/SeqList.java" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: 2.3.2 单链表/src/Node.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/2.3.2 单链表/src/Node.java b/2.3.2 单链表/src/Node.java
+new file mode 100644
+--- /dev/null	(date 1631457470514)
++++ b/2.3.2 单链表/src/Node.java	(date 1631457470514)
+@@ -0,0 +1,18 @@
++public class Node<T> {
++    public T data;
++    public Node<T> next;
++    public Node(T data,Node<T> next)
++    {
++        this.data=data;
++        this.next=next;
++    }
++    public Node()
++    {
++        this(null,null);
++    }
++    public String toString()
++    {
++        return this.data.toString();
++    }
++    Node<T> head=null;
++}
+Index: 2.3.2 单链表/2.3.2 单链表.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/2.3.2 单链表/2.3.2 单链表.iml b/2.3.2 单链表/2.3.2 单链表.iml
+new file mode 100644
+--- /dev/null	(date 1631451391777)
++++ b/2.3.2 单链表/2.3.2 单链表.iml	(date 1631451391777)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
