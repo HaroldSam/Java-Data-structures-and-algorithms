@@ -68,4 +68,17 @@ public class SinglyList<T> extends Object
     {
         this.head.next=null;
     }
+
+    //将list单链表逆转，将其所有结点的next指向其前驱结点
+    public void reverse(SinglyList<T> list)
+    {
+        Node<T> front= list.head;
+        Node<T> p=front.next;
+        Node<T> succ=p.next;
+        for(front=front.next;p!=null;)
+        {
+            p.next=front;
+            p=succ;
+        }
+    }
 }
